@@ -54,13 +54,12 @@ namespace Hotel_System
                 DateTime dateIn = dateTimePickerIN.Value;
                 DateTime dateOut = dateTimePickerOUT.Value;
 
-                if (DateTime.Compare(dateIn.Date,DateTime.Now.Date) > 0)
+                if (dateIn < DateTime.Now)
                 {
                     MessageBox.Show("The Date must be Greater Or Equal than Current Date", "Invalid Date In", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if (DateTime.Compare(dateOut.Date,dateIn.Date) < 0)
+                else if (dateOut < dateIn)
                 {
-                    MessageBox.Show(dateOut.Day + "-" + dateIn.Day);
                     MessageBox.Show("The DateOut must be Greater Or Equal than DateIn", "Invalid Date Out", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
@@ -96,13 +95,12 @@ namespace Hotel_System
                 DateTime dateIn = dateTimePickerIN.Value;
                 DateTime dateOut = dateTimePickerOUT.Value;
 
-                if (DateTime.Compare(dateIn.Date, DateTime.Now.Date) > 0)
+                if (dateIn < DateTime.Now)
                 {
                     MessageBox.Show("The Date must be Greater Or Equal than Current Date", "Invalid Date In", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if (DateTime.Compare(dateOut.Date, dateIn.Date) < 0)
+                else if (dateOut < dateIn)
                 {
-                    MessageBox.Show(dateOut.Day + "-" + dateIn.Day);
                     MessageBox.Show("The DateOut must be Greater Or Equal than DateIn", "Invalid Date Out", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
@@ -186,7 +184,7 @@ namespace Hotel_System
 
             dateTimePickerIN.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[3].Value.ToString());
             dateTimePickerOUT.Value = Convert.ToDateTime(dgvReservations.CurrentRow.Cells[4].Value.ToString());
-           
+
 
         }
     }
