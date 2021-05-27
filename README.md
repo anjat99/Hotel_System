@@ -18,6 +18,9 @@ A simple admin panel for managing system for hotel built using C#, WindowsForms,
 
    ![login](https://user-images.githubusercontent.com/72461048/119884241-b28f4000-bf30-11eb-813f-5afd867cfdfb.png)
     <br>
+    ![clients](https://user-images.githubusercontent.com/72461048/119884136-95f30800-bf30-11eb-87a2-9acb0d553f8d.png)
+
+ <br>
 
 
 
