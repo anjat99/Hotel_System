@@ -22,7 +22,7 @@ A simple admin panel for managing system for hotel built using C#, WindowsForms,
 
  <br>
 
-
+![editClient](https://user-images.githubusercontent.com/72461048/119884153-9ab7bc00-bf30-11eb-805d-96f578309405.png)
 
 
 
